@@ -1,0 +1,66 @@
+html {
+  background-color: mediumturquoise;
+}
+@keyframes dotsbox {
+  0% {
+    transform: rotateZ(0);
+  }
+  50%,
+  100% {
+    transform: rotateZ(180deg);
+  }
+}
+@keyframes rodsbox {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50%,
+  100% {
+    transform: none;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  padding: 200px;
+  width: 400px;
+}
+.dot {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.rod {
+  background-color: white;
+  width: 50px;
+  height: 200px;
+}
+.dots {
+  animation: dotsbox 1s ease-in-out infinite;
+}
+.rod {
+  animation: rodsbox 1s ease-in-out infinite;
+}
+.rod:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.rod:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.rod:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.rod:nth-child(5) {
+  animation-delay: 0.4s;
+}

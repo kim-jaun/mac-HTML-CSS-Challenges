@@ -1,0 +1,51 @@
+html {
+  background-color: gainsboro;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+body {
+  width: 500px;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.colors {
+  width: 180px;
+  height: 300px;
+  margin: 15px 8px;
+  border: 5px solid white;
+}
+.colors:nth-child(1) {
+  background-color: tomato;
+}
+.colors:nth-child(2) {
+  background-color: teal;
+}
+.colors:nth-child(3) {
+  background-color: burlywood;
+}
+.colors:nth-child(4) {
+  background-color: thistle;
+}
+.text {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+.colorsname {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+}
+.colorscode {
+  font-weight: bolder;
+  font-size: 12px;
+  line-height: 40px;
+}

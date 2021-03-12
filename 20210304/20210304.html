@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Create An Account</title>
+        <h1>Crete An Account</h1>
+    <body>
+        <form>
+            <span>
+                <label for="first name">First name</label>
+                <input id="first name" required placeholder="First name" type="text"/>
+            </span>
+            <div>
+                <label for="last name">Last name</label>
+                <input id="last name" required placeholder="Last name" type="text"/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" required placeholder="Email" type="email"/>
+            </div>
+            <div>
+                <label for="username">Username</label>
+                <input id="username" required placeholder="Username" type="text"/>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" required placeholder="Password" minlength="10" type="password"/>
+            </div>
+            <div>
+                <label for="birth-date">Birth date</label>
+                <input id="birth-date" required placeholder="Birth date" type="date"/>
+            </div>
+            <div>
+                <label for="happyrange">How happy are you?</label>
+                <input id="happyrange" type="range" list="tickmarks"/>
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                  </datalist>
+            </div>
+            <div>
+                <label for="fav-color">What is your fav. color?</label>
+                <input id="fav-color" type="color"/>
+            </div>
+            <div>
+                <input type="submit" value="Create Account"/>
+            </div>
+        </form>
+    </body>
+</html>

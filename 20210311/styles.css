@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import "reset.css";
+* {
+  box-sizing: border-box;
+}
+
+.library-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffce32;
+  padding: 30px 20px 50px 20px;
+}
+
+.library-bar__btn:nth-child(2) {
+  font-size: 25px;
+  font-weight: bold;
+}
+.search {
+  position: fixed;
+  top: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  margin-top: -25px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2);
+}
+.search__input input {
+  border: none;
+}
+.search__input ::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: bolder;
+}
+.todaysbook {
+  padding: 0px 30px;
+  margin-top: 170px;
+}
+.todaysbook__title {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 20px 0px;
+}
+.todaysbook__contents {
+  display: flex;
+}
+.todaybook__img img {
+  height: 175px;
+  border-radius: 10px;
+}
+.todaysbook__dis {
+  width: 100%;
+  margin-left: 20px;
+}
+.todaysbook__dis__title {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.todaysbook__dis__author {
+  margin: 13px 0px;
+  font-size: 12px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.2);
+}
+.todaysbook__dis__star {
+  color: #ffce33;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.todaysbook__stars:last-child {
+  color: #ededed;
+}
+.todaysbook__dis__sub {
+  display: flex;
+}
+.todaysbook__dis__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 25px;
+  background-color: #f7f7f7;
+  padding-bottom: 5px;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+.todaysbook__dis__text:first-child {
+  margin-right: 10px;
+}
+.todaysbook__dis__fav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.todaysbook__dis__now:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #ffce33;
+  border-radius: 50%;
+}
+.todaysbook__dis__now:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 35px;
+  background-color: #0d0d0d;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+.topadventures-title {
+  padding: 0px 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 20px 0px;
+}
+.topadventures {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.booklist {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+}
+.holdstill__img img {
+  height: 110px;
+  width: 75px;
+  border-radius: 10px;
+}
+.holdstill__star {
+  color: #ffce33;
+  margin-top: 8px;
+  font-size: 5px;
+}
+.holdstill__stars:last-child {
+  color: #ededed;
+}
+.junglebook__img img {
+  height: 110px;
+  width: 75px;
+  border-radius: 10px;
+}
+.junglebook__star {
+  color: #ffce33;
+  margin-top: 8px;
+  font-size: 5px;
+}
+.thejunglebook__img img {
+  height: 110px;
+  width: 75px;
+
+  border-radius: 10px;
+}
+.thejunglebook__star {
+  color: #ffce33;
+  margin-top: 8px;
+  font-size: 5px;
+}
+.amarathebrave__img img {
+  height: 110px;
+  width: 75px;
+  border-radius: 10px;
+}
+.amarathebrave__star {
+  color: #ffce33;
+  margin-top: 8px;
+  font-size: 5px;
+}
+.harrypotter__img img {
+  height: 110px;
+  width: 75px;
+  border-radius: 10px;
+}
+.harrypotter__star {
+  color: #ffce33;
+  margin-top: 8px;
+  font-size: 5px;
+}
+.popularsuthors-title {
+  padding: 0px 30px;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 20px 0px;
+}
+.popularsuthors {
+  display: flex;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.richardmartin__img img {
+  width: 110px;
+  border-radius: 15px;
+}
+.richardmartin__contents {
+  margin: 0px 20px;
+  overflow-y: scroll;
+}
+.richardmartin__name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.rrichardmartin__text {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.2);
+}
+.joenkrowing__img img {
+  width: 110px;
+  border-radius: 15px;
+}
+.joenkrowing__contents {
+  margin: 0px 20px;
+  overflow-y: scroll;
+}
+.joenkrowing__name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.rjoenkrowing__text {
+  height: 110px;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.2);
+}
